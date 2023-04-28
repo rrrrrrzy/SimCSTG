@@ -1,20 +1,20 @@
-# SimCSTG
+# SimCSTG: Simple Contrastive Learning Framework for Spatio-temporal Graph Model
 
-一种交通时空图序列预测的对比学习框架
+My undergraduate dissertation
 
-训练（使用GWN在PEMS08上）：
+train (with GWN onPEMS08):
 
 ```
 python train.py
 ```
 
-使用MTGNN在PEMS04上训练：
+train (with MTGNN on PEMS04):
 
 ```
 python train.py --dataset d4 --model_name MTGNN
 ```
 
-训练后进行测试，将对应训练目录下的BEST_MODEL.pth文件复制到trained_model目录下对应的数据集目录中，运行：
+test
 
 ```
 python test.py --dataset d8 --model_file BEST_MODEL
